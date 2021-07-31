@@ -15,4 +15,11 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 COPY . .
 
+
+# Choose one command from the followings...
+
+# This line is for Heroku / Railway
 CMD ["bash","start.sh"]
+
+# This line is for Qovery
+#CMD ["bash","-m","start.sh"]
